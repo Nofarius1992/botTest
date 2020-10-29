@@ -12,10 +12,11 @@
     if($response['ok']) {
         foreach ($response['result'] as $update) {
             echo $update['message']['text'];
+            var_dump($response);
             ?>
-            </br>
+            </pre>
             <?php
         }
     }
-    var_dump($response);
+    
  ?>
